@@ -42,11 +42,11 @@ $(document).ready(function () {
     pomos = 0
     cookie_pomo = Cookies.get('vim-pomo-count')
     if (typeof cookie_pomo !== 'undefined') {
-        pomos = Number(cookie)
+        pomos = Number(cookie_pomo)
     }
     cookie_ticks = Cookies.get('vim-tick-count')
     if (typeof cookie_pomo !== 'undefined') {
-        init_ticks = Number(cookie)
+        init_ticks = Number(cookie_ticks)
     }
     $('#pomos').text(pomos)
     display()
