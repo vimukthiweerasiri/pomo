@@ -54,11 +54,14 @@ $(document).ready(function () {
     cookie_pomo = Cookies.get('vim-pomo-count')
     if (typeof cookie_pomo !== 'undefined') {
         pomos = Number(cookie_pomo)
+        love()
     }
     cookie_ticks = Cookies.get('vim-tick-count')
     if (typeof cookie_ticks !== 'undefined') {
-        current_tick = Number(cookie_ticks)
-        display()
+        if(Number(cookie_ticks) > 0){
+            current_tick = Number(cookie_ticks)
+            display()
+        }
     }
     time_history = []
     cookie_history = Cookies.get('vim-history')
