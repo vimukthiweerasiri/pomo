@@ -47,7 +47,7 @@ $(document).ready(function () {
     analitics = function (state) {
         console.log(state, current_tick, new Date());
     }
-    init_ticks = 0.2 * 60
+    init_ticks = 15 * 60
     current_tick = init_ticks
     pomos = 0
     last_min = -1
